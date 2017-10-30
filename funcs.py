@@ -13,4 +13,27 @@ def season(numb):
     return result
 
 
-print(season(7))
+print("Option 1: ", season(7))
+
+
+# Get season by the month number. Option 2
+def season(numb):
+    seasons = {
+        1: "Winter",
+        2: "Winter",
+        3: "Spring",
+        4: "Spring",
+        5: "Spring",
+        6: "Summer",
+        7: "Summer",
+        8: "Summer",
+        9: "Autumn",
+        10: "Autumn",
+        11: "Autumn",
+        12: "Winter"
+    }
+    result = seasons.get(numb, "A month with this number does not exist!")
+    return result
+
+
+print("Option 2: ", season(5))

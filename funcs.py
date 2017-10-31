@@ -163,3 +163,24 @@ def task5(s):
 
 task5("1kjgyu78,ytt1563f1g56dr1g56sg56dr1g56sg56dr1g56sgiy")
 task5(None)
+
+
+# task 7 calculator
+def calculate(x, y, operation):
+    if operation in ('+', '-', '*', '/'):
+        if operation == '+':
+            print("%f" % (x + y))
+        elif operation == '-':
+            print("%f" % (x - y))
+        elif operation == '*':
+            print("%f" % (x * y))
+        elif operation == '/':
+            if y != 0:
+                print("%f" % (x / y))
+            else:
+                print("Division by zero")
+    else:
+        print("Bad operation")
+
+
+calculate(1, 2, '*')

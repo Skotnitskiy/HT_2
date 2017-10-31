@@ -149,13 +149,17 @@ def call_funcs(s, ln):
 
 # task 5
 def task5(s):
-    ln = len(s)
-    if ln >= 30 and ln <= 50:
-        wdl(s, ln)
-    elif ln < 30:
-        get_sum_and_clean_string(s, ln)
-    elif ln > 50:
-        call_funcs(s, ln)
+    if s is not None:
+        ln = len(s)
+        if ln >= 30 and ln <= 50:
+            wdl(s, ln)
+        elif ln < 30:
+            get_sum_and_clean_string(s, ln)
+        elif ln > 50:
+            call_funcs(s, ln)
+    else:
+        print("Bad value!")
 
 
 task5("1kjgyu78,ytt1563f1g56dr1g56sg56dr1g56sg56dr1g56sgiy")
+task5(None)

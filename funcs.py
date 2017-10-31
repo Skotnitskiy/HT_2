@@ -65,3 +65,14 @@ def season(numb):
 
 
 print("Option 3: ", season(6))
+
+
+# task 2
+def ku(arg1, arg2=":-)"):
+    result = arg2
+    if arg2 is not ku.__defaults__[0]:
+        result = arg1 + arg2
+    return result
+
+
+print(ku(1))

@@ -127,11 +127,28 @@ def wdl(s, ln):
     print("digits = %d, wrds = %d, len = %d" % (digits, wrds, ln))
 
 
+# task 6
+def get_sum_and_clean_string(s, ln):
+    sum_digits = 0
+    clean_string = ""
+    i = 0
+    while(i < ln):
+        if str.isdigit(s[i]):
+            sum_digits += int(s[i])
+        else:
+            clean_string += s[i]
+        i += 1
+    print("sum_digits = %d, clean_string = %s" % (sum_digits, clean_string))
+
+
 # task 5
 def task5(s):
     ln = len(s)
     if ln >= 30 and ln <= 50:
         wdl(s, ln)
+    elif ln < 30:
+        get_sum_and_clean_string(s, ln)
+    # elif ln > 50:
 
 
-task5("1kjgyu78,ytt1563f1g56dr1g56sg46dtrh4")
+task5("1kjgyu78,ytt1563f1g56dr1g56sg")

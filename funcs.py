@@ -96,3 +96,17 @@ def func4(a, b, c):
 
 
 print(func4(1, 2, 3))
+
+
+# task 4
+def task4(x, y):
+    if x > y:
+        result = "x is greater than y " + str((x - y))
+    elif x < y:
+        result = "y is greater than x " + str((y - x))
+    else:
+        result = "x = y = " + str(x)
+    return result
+
+
+print(task4(2, 2))

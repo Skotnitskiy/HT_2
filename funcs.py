@@ -37,3 +37,31 @@ def season(numb):
 
 
 print("Option 2: ", season(5))
+
+
+def season(numb):
+    seasons = ("Winter", "Spring", "Summer", "Autumn")
+    months = ("January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December")
+    table = {
+        1: (0, 0),
+        2: (0, 1),
+        3: (1, 2),
+        4: (1, 3),
+        5: (1, 4),
+        6: (2, 5),
+        7: (2, 6),
+        8: (2, 7),
+        9: (3, 8),
+        10: (3, 9),
+        11: (3, 10),
+        12: (0, 11)
+    }
+    result = "A month with this number does not exist!"
+    if numb in table:
+        index = table.get(numb)
+        result = seasons[index[0]] + "  it is " + months[index[1]]
+    return result
+
+
+print("Option 3: ", season(6))

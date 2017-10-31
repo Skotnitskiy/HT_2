@@ -110,3 +110,28 @@ def task4(x, y):
 
 
 print(task4(2, 2))
+
+
+# task 6
+# print digits words and len
+def wdl(s, ln):
+    wrds = 0
+    digits = 0
+    i = 0
+    while(i < ln):
+        if str.isdigit(s[i]):
+            digits += 1
+        else:
+            wrds += 1
+        i += 1
+    print("digits = %d, wrds = %d, len = %d" % (digits, wrds, ln))
+
+
+# task 5
+def task5(s):
+    ln = len(s)
+    if ln >= 30 and ln <= 50:
+        wdl(s, ln)
+
+
+task5("1kjgyu78,ytt1563f1g56dr1g56sg46dtrh4")

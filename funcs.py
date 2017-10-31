@@ -76,3 +76,23 @@ def ku(arg1, arg2=":-)"):
 
 
 print(ku(1))
+
+
+# task 3
+def func1(a):
+    return a * a
+
+
+def func2(b):
+    return b + 1
+
+
+def func3(c):
+    return c - 1
+
+
+def func4(a, b, c):
+    return func1(a) + func2(b) + func3(c)
+
+
+print(func4(1, 2, 3))
